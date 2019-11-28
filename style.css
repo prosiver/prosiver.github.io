@@ -1,0 +1,75 @@
+body {
+  width: 100%;
+  margin: 0 auto; }
+
+.wrap {
+  max-width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  overflow: hidden; }
+
+span {
+  -webkit-animation-name: title-animation;
+          animation-name: title-animation;
+  -webkit-animation-duration: 0s;
+          animation-duration: 0s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0; }
+
+.color-anim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  -webkit-animation-name: test-animation;
+          animation-name: test-animation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 0, 1);
+          animation-timing-function: cubic-bezier(0, 0, 0, 1); }
+
+@-webkit-keyframes title-animation {
+  to {
+    opacity: 1; } }
+
+@keyframes title-animation {
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes test-animation {
+  0% {
+    background-color: red; }
+  50% {
+    transform: translateX(0%); }
+  100% {
+    background-color: red;
+    transform: translateX(100%); } }
+
+@keyframes test-animation {
+  0% {
+    background-color: red; }
+  50% {
+    transform: translateX(0%); }
+  100% {
+    background-color: red;
+    transform: translateX(100%); } }
