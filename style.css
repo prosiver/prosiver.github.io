@@ -58,18 +58,18 @@ span {
 
 @-webkit-keyframes test-animation {
   0% {
-    background-color: red; }
+    background-color: #46ae92; }
   50% {
     transform: translateX(0%); }
   100% {
-    background-color: red;
+    background-color: #46ae92;
     transform: translateX(100%); } }
 
 @keyframes test-animation {
   0% {
-    background-color: red; }
+    background-color: #46ae92; }
   50% {
     transform: translateX(0%); }
   100% {
-    background-color: red;
+    background-color: #46ae92;
     transform: translateX(100%); } }
